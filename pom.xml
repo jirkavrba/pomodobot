@@ -49,6 +49,16 @@
             <artifactId>JDA</artifactId>
             <version>4.2.0_222</version>
         </dependency>
+        <dependency>
+            <groupId>com.j256.ormlite</groupId>
+            <artifactId>ormlite-jdbc</artifactId>
+            <version>5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.0.20061217</version>
+        </dependency>
     </dependencies>
 
     <build>

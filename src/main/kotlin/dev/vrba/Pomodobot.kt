@@ -1,6 +1,7 @@
 package dev.vrba
 
 import dev.vrba.pomodobot.CommandDispatcher
+import dev.vrba.pomodobot.database.Database
 import net.dv8tion.jda.api.JDABuilder
 
 fun main(args: Array<String>) {
@@ -13,6 +14,8 @@ fun main(args: Array<String>) {
 
     val client = JDABuilder.createDefault(token)
     val dispatcher = CommandDispatcher()
+
+    println(Database.sessions.queryForAll())
 
     client.addEventListeners(dispatcher)
 }
