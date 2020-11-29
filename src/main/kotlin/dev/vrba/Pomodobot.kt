@@ -15,7 +15,6 @@ fun main(args: Array<String>) {
     val client = JDABuilder.createDefault(token)
     val dispatcher = CommandDispatcher()
 
-    println(Database.sessions.queryForAll())
-
     client.addEventListeners(dispatcher)
+    client.build().awaitReady()
 }
